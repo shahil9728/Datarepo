@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Professional Website</title>
+  <!-- Add Bootstrap CSS Link -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f8f9fa;
+      color: #495057;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #007bff;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .jumbotron {
+      background-color: #fff;
+      padding: 80px 20px;
+      margin-top: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    h1 {
+      color: #007bff;
+    }
+
+    .lead {
+      font-size: 1.25rem;
+      color: #6c757d;
+    }
+
+    .feature-box {
+      margin-top: 30px;
+    }
+
+    .feature-icon {
+      font-size: 3rem;
+      color: #007bff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+    background-color: #f8f9fa;
+      color: #070505;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+{{> navbar}}
+  
+
+  <div class="container">
+    <div class="jumbotron">
+      <h1 class="display-4">Welcome to Our Website</h1>
+      <p class="lead">Crafting solutions for your needs with excellence and professionalism.</p>
+    </div>
+
+    <div class="row feature-box">
+      <div class="col-md-4">
+        <i class="feature-icon fas fa-chart-bar"></i>
+        <h3>Business Analytics</h3>
+        <p>Gain insights into your business data with our advanced analytics solutions.</p>
+      </div>
+      <div class="col-md-4">
+        <i class="feature-icon fas fa-cogs"></i>
+        <h3>Custom Solutions</h3>
+        <p>We tailor solutions to fit your unique requirements, ensuring optimal results.</p>
+      </div>
+      <div class="col-md-4">
+        <i class="feature-icon fas fa-users"></i>
+        <h3>Client-Centric Approach</h3>
+        <p>Putting clients first is our priority, ensuring satisfaction and long-term partnerships.</p>
+      </div>
+    </div>
+  </div>
+{{> footer}}
+  
+  <!-- Add Font Awesome CSS for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <!-- Add Bootstrap JS and Popper.js Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

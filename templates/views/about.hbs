@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Include Font Awesome CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-d47/wA6l4cbFC6uz5s1LlLoUt4H13V6Nfb4uZqA/t+g16Ue9zKt0e3OQ5FqImdYpd9l9nMt2WO+5f3aj2bJxjCg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            color: #495057;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #b0b0b0;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hello {
+            background-color: #fff;
+            padding: 80px 20px;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+            margin: 20px;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            color: #007bff;
+        }
+
+        .lead {
+            font-size: 1.25rem;
+            color: #6c757d;
+        }
+
+        .feature-box {
+            margin-top: 30px;
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            color: #007bff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #f8f9fa;
+            color: #110e0e;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <title>About Page</title>
+</head>
+<body>
+    {{> navbar}}
+    <header>
+        <h1 class="display-4">Welcome to Tech-Subh</h1>
+        <p class="lead">Learn more about us and our amazing features.</p>
+    </header>
+
+    <div class="hello">
+        <h2 class="display-4">Hello, Vertos</h2>
+        <p class="lead">This is a brief introduction to the about section. Feel free to explore and discover more about us!</p>
+    </div>
+
+    <div class="container">
+        <div class="row feature-box">
+            <div class="col-md-4">
+                <i class="feature-icon fas fa-laptop-code"></i>
+                <h3>Computer Science</h3>
+                <p>Explore the fascinating world of algorithms, data structures, and software development.</p>
+            </div>
+            <div class="col-md-4">
+                <i class="feature-icon fas fa-cogs"></i>
+                <h3>Engineering Principles</h3>
+                <p>Learn about fundamental engineering principles that power technological innovations.</p>
+            </div>
+            <div class="col-md-4">
+                <i class="feature-icon fas fa-network-wired"></i>
+                <h3>Networking</h3>
+                <p>Discover the complexities of computer networks and communication systems.</p>
+            </div>
+        </div>
+    </div>
+
+    {{> footer}}
+
+    <!-- Use the latest version of Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-hD/812hipT8mNQZz4eLV3m/kCjKk8L0ZtR5K80qjlp/hFI8LWygQ9jPjcc" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <!-- Add Bootstrap JS and Popper.js Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

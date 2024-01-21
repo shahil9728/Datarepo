@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Add Font Awesome CSS for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-d47/wA6l4cbFC6uz5s1LlLoUt4H13V6Nfb4uZqA/t+g16Ue9zKt0e3OQ5FqImdYpd9l9nMt2WO+5f3aj2bJxjCg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            color: #495057;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #b0b0b0;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .hello {
+            background-color: #fff;
+            padding: 40px 20px;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #007bff;
+        }
+
+        .lead {
+            font-size: 1.25rem;
+            color: #6c757d;
+        }
+
+        .feature-box {
+            margin-top: 30px;
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            color: #007bff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #f8f9fa;
+            color: #000000;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            border-radius: 0 0 8px 8px;
+        }
+    </style>
+    <title>IT Sector Page</title>
+</head>
+<body>
+    {{> navbar}}
+    <header>
+        <h1 class="display-4"><i class="feature-icon fas fa-laptop-code"></i> IT Sector in the Technical Field</h1>
+        <p class="lead">Explore the exciting features and innovations in the IT sector.</p>
+    </header>
+
+    <div class="hello">
+        <h2 class="display-4">Hello, Tech Enthusiasts</h2>
+        <p class="lead">Discover the advancements and opportunities in the Information Technology sector!</p>
+    </div>
+
+    <div class="container">
+        <div class="row feature-box">
+            <div class="col-md-4">
+                <i class="feature-icon fas fa-globe"></i>
+                <h3>Global Presence</h3>
+                <p>Establish a global presence with IT solutions that transcend geographical boundaries.</p>
+            </div>
+            <div class="col-md-4">
+                <i class="feature-icon fas fa-cogs"></i>
+                <h3>Technological Innovations</h3>
+                <p>Experience cutting-edge technological solutions driving innovation in the IT sector.</p>
+            </div>
+            <div class="col-md-4">
+                <i class="feature-icon fas fa-network-wired"></i>
+                <h3>Networking Solutions</h3>
+                <p>Explore robust networking solutions that form the backbone of IT infrastructure.</p>
+            </div>
+       
+            <div class="col-md-4">
+                <i class="feature-icon fas fa-cloud"></i>
+                <h3>Cloud Computing</h3>
+                <p>Embrace the power of cloud computing for scalable and efficient IT operations.</p>
+            </div>
+            <div class="col-md-4">
+                <i class="feature-icon fas fa-code"></i>
+                <h3>Software Development</h3>
+                <p>Drive innovation through software development, creating solutions for diverse needs.</p>
+            </div>
+            <div class="col-md-4">
+                <i class="feature-icon fas fa-server"></i>
+                <h3>Server Management</h3>
+                <p>Efficiently manage servers to ensure seamless performance and data integrity.</p>
+            </div>
+        </div>
+    </div>
+
+    {{> footer}}
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <!-- Add Bootstrap JS and Popper.js Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!-- error.hbs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error</title>
+    <!-- Include Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-d47/wA6l4cbFC6uz5s1LlLoUt4H13V6Nfb4uZqA/t+g16Ue9zKt0e3OQ5FqImdYpd9l9nMt2WO+5f3aj2bJxjCg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-d47/wA6l4cbFC6uz5s1LlLoUt4H13V6Nfb4uZqA/t+g16Ue9zKt0e3OQ5FqImdYpd9l9nMt2WO+5f3aj2bJxjCg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+
+        .error-container {
+            border: 1px solid #dc3545;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #f8d7da;
+            color: #721c24;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        h1 {
+            color: #dc3545;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+        p {
+            color: #721c24;
+            margin-top: 10px;
+        }
+
+        /* Font Awesome icon styling */
+        .fa-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: #dc3545;
+            animation: rotate 4s linear infinite;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <!-- Use Font Awesome icon -->
+        <i class="fas fa-exclamation-triangle fa-icon"></i>
+        <h1>User Not Found</h1>
+        <p>We're sorry, but the requested user could not be found.</p>
+    </div>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <!-- Add Bootstrap JS and Popper.js Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

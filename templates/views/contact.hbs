@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Page</title>
+  <!-- Add Bootstrap CSS Link -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Add Font Awesome CSS for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-d47/wA6l4cbFC6uz5s1LlLoUt4H13V6Nfb4uZqA/t+g16Ue9zKt0e3OQ5FqImdYpd9l9nMt2WO+5f3aj2bJxjCg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f8f9fa;
+      color: #495057;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #abaeb1;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .jumbotron {
+      background-color: #fff;
+      padding: 60px 20px;
+      margin-top: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    h1 {
+      color: #007bff;
+    }
+
+    .lead {
+      font-size: 1.25rem;
+      color: #6c757d;
+    }
+
+    .form-container {
+      max-width: 600px;
+      margin: 20px auto;
+      background-color: #fff;
+      padding: 40px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      transition: box-shadow 0.3s ease-in-out;
+    }
+
+    .form-container:hover {
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ced4da;
+      border-radius: 4px;
+      box-sizing: border-box;
+      transition: border-color 0.3s ease-in-out;
+    }
+
+    input:focus {
+      border-color: #007bff;
+    }
+
+    button {
+      background-color: #007bff;
+      color: #fff;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    .fa-icon {
+      font-size: 68px;
+      margin-bottom: 20px;
+      color: #007bff; /* Set initial color to blue */
+      transition: transform 1s ease, color 1s ease; /* Add transition for rotation and color change */
+    }
+
+    .fa-icon:hover {
+      transform: rotate(360deg); /* Rotate 360 degrees on hover */
+      color: #0056b3; /* Change color to darker blue on hover */
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #f8f9fa;
+      color: #040303;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    .form-container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.form-container input:focus {
+  border-color: #007bff;
+  outline: none; /* Remove default focus outline */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add a subtle box shadow on focus */
+}
+  </style>
+</head>
+<body>
+
+  {{> navbar}}
+
+  <div class="container">
+    <header>
+      <h1 class="display-4"><i class="fa-icon fas fa-user-circle"></i> Registration Page</h1>
+    </header>
+
+    <div class="jumbotron">
+      <h1 class="display-4">Welcome to  Technical World <i class="feature-icon fas fa-globe fa-icon"></i></h1>
+      <p class="lead">Register with us to get access to exclusive features.</p>
+    </div>
+
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+        <div class="form-container">
+          <form action="/" method="POST">
+
+            <div class="form-group row">
+              <div class="col-md-6">
+                <label for="firstname">First Name:</label>
+                <input type="text" class="form-control" id="firstname" name="firstname" required>
+              </div>
+
+              <div class="col-md-6">
+                <label for="lastname">Last Name:</label>
+                <input type="text" class="form-control" id="lastname" name="lastname" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="roll">Roll No:</label>
+              <input type="text" class="form-control" id="roll" name="roll" required>
+            </div>
+
+            <div class="form-group">
+              <label for="section">Section:</label>
+              <input type="tel" class="form-control" id="section" name="section" required>
+            </div>
+
+            <div class="form-group">
+              <label for="reg">Registration Number:</label>
+              <input type="tel" class="form-control" id="reg" name="reg" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Register</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {{> footer}}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <!-- Add Bootstrap JS and Popper.js Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
