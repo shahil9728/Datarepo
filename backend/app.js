@@ -6,6 +6,7 @@ require('./conn'); // Ensure MongoDB connection
 const bodyParser = require('body-parser');
 const { Register } = require('./conn');
 const bcrypt = require('bcryptjs');
+const port = process.env.PORT || 4000;
 const session = require('express-session');
 // Set up paths
 const static_path = path.join(__dirname, '../templates/views');
@@ -110,6 +111,6 @@ app.post('/login', async (req, res) => {
     }
 });
 
-app.listen(3000, () => {
-    console.log('Server listening on port 3000');
-});
+app.listen(port, (req, res) => {
+    console.log("Server is runnning at 4000");
+})
